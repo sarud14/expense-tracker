@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import ThemeToggle from "./theme-toggle";
+import UserMenu from "./user-menu";
 
 export default function Header() {
   return (
@@ -40,7 +41,7 @@ export default function Header() {
         </Button>
         {/* <SearchButton /> */}
         <ThemeToggle /> 
-        {/* <UserMenu /> */}
+        <UserMenu />
       </div>
     </header>
   );

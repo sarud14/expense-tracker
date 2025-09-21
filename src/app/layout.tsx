@@ -4,6 +4,7 @@ import { APP_NAME, APP_DESCRIPTION } from "@/config/env.config";
 import { roboto } from "@/styles/font";
 import { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: {
@@ -32,6 +33,7 @@ export default function RootLayout({
             <main className="flex-1 overflow-y-auto p-4">{children}</main>
             <Footer />
           </div>
+          <Toaster position="top-right" />
         </ThemeProvider>
       </body>
     </html>
